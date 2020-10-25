@@ -27,11 +27,11 @@ python -m pip install -U pip praw psaw
 - Open a command prompt and change to the directory you extracted the archive to
 - Example: For all posts created between October 13 and 14 (1:59 pm), print the URLs of comments that are one week (604800 seconds) newer than the posts they're in:
 ```
-./printComments.py -i "<client id>" -s "<client secret>" -u "<reddit account name>" -r "<subreddit name>" -t "2020-10-13 13:59" "2020-10-14 13:59" -d 604800
+python printComments.py -i "<client id>" -s "<client secret>" -u "<reddit account name>" -r "<subreddit name>" -t "2020-10-13 13:59" "2020-10-14 13:59" -d 604800
 
 ```
 - Example: Lock all posts created between October 13 and 14: 
 ```
-./lockPosts.py -i "<client id>" -s "<client secret>" -u "<reddit account name>" -p "<reddit account password>" -r "<subreddit name>" -t "2020-10-13 13:59" "2020-10-14 13:59"
+python lockPosts.py -i "<client id>" -s "<client secret>" -u "<reddit account name>" -p "<reddit account password>" -r "<subreddit name>" -t "2020-10-13 13:59" "2020-10-14 13:59"
 
 ```
